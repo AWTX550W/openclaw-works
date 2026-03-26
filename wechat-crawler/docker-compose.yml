@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  wechat-crawler:
+    build: .
+    container_name: wechat-crawler
+    restart: unless-stopped
+    volumes:
+      # 持久化数据
+      - ./data:/app/data
+      # 配置文件（需提前创建 config.py）
+      - ./config.py:/app/config.py:ro
+    environment:
+      - TZ=Asia/Shanghai
+    # 如需代理，取消注释并配置
+    # environment:
+    #   - HTTP_PROXY=http://proxy:port
+    #   - HTTPS_PROXY=http://proxy:port
+    command: python crawler.py --daemon
