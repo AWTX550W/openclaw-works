@@ -1,0 +1,2185 @@
+[2026-04-23 20:28:04] [INFO] ============================================================
+[2026-04-23 20:28:04] [INFO] 他趣抢礼物自动化脚本启动
+[2026-04-23 20:28:04] [INFO] ============================================================
+[2026-04-23 20:28:04] [INFO] 
+【步骤 1】环境检查
+[2026-04-23 20:28:04] [INFO] 检查 ADB 工具...
+[2026-04-23 20:28:04] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:28:04] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:28:08] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:28:08] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:28:08] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:28:08] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:28:08] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:28:08] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:28:08] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:28:11] [ERROR] ❌ 设备连接失败: dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+Error: Unable to connect to device ANGYVB3C04003929: Error: ADB error with device ANGYVB3C04003929 when calling shell, please check https://midscenejs.com/integrate-with-android.html#faq : Error executing adbExec. Original error: ''adb' executable is not found neither in the process working folder (C:\Users\Lenovo\.workbuddy\skills\android-device-automation) nor in any folders specified in the PATH environment variable (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64;C:\Users\Lenovo\.workbuddy\skills\android-device-automation\node_modules\.bin;C:\Users\Lenovo\.workbuddy\skills\node_modules\.bin;C:\Users\Lenovo\.workbuddy\node_modules\.bin;C:\Users\Lenovo\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\WINDOWS\System32;C:\WINDOWS\System32;C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\;D:\python\Scripts\;D:\python\;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;D:\Programs\Microsoft VS Code\bin;D:\JZDS360Ly\ollama_location;C:\Users\Lenovo\AppData\Roaming\npm;C:\ProgramData\Lenovo\GitHubDesktop\bin;D:\WorkBuddy\bin;C:\Users\Lenovo\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.1-full_build\bin;;C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64)'; Command output: <empty>
+    at C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:911:29
+    at AndroidDevice.connect (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:868:25)
+    at agentFromAdbDevice (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1944:9)
+    at AndroidMidsceneTools.ensureAgent (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1973:27)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1988:39)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+
+[2026-04-23 20:29:41] [INFO] ============================================================
+[2026-04-23 20:29:41] [INFO] 他趣抢礼物自动化脚本启动
+[2026-04-23 20:29:41] [INFO] ============================================================
+[2026-04-23 20:29:41] [INFO] 
+【步骤 1】环境检查
+[2026-04-23 20:29:41] [INFO] 检查 ADB 工具...
+[2026-04-23 20:29:41] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:29:41] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:29:43] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:29:43] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:29:43] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:29:43] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:29:43] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:29:43] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:29:43] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:29:48] [INFO] ✅ 设备连接成功
+[2026-04-23 20:29:48] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 20:29:48] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 20:29:50] [ERROR] ❌ 启动失败: Failed to get device list: Error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+    at requireSdkRoot (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\appium-adb\lib\helpers.js:77:11)
+    at Function.createADB (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\appium-adb\lib\adb.ts:131:39)
+    at getConnectedDevices (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1880:71)
+    at agentFromAdbDevice (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1938:35)
+    at AndroidMidsceneTools.ensureAgent (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1973:33)
+    at args (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\base-tools.js:104:137)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:331:41)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:36)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error in handler for "Launch": Unable to get connected Android device list, please check https://midscenejs.com/integrate-with-android.html#faq : Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+Failed to get agent or execute action "Launch": Unable to get connected Android device list, please check https://midscenejs.com/integrate-with-android.html#faq : Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+Command failed
+
+[2026-04-23 20:29:50] [INFO] 断开设备连接...
+[2026-04-23 20:29:53] [INFO] ✅ 设备已断开
+[2026-04-23 20:30:25] [INFO] ============================================================
+[2026-04-23 20:30:25] [INFO] 他趣抢礼物自动化脚本启动
+[2026-04-23 20:30:25] [INFO] ============================================================
+[2026-04-23 20:30:25] [INFO] 
+【步骤 1】环境检查
+[2026-04-23 20:30:25] [INFO] 检查 ADB 工具...
+[2026-04-23 20:30:25] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:30:25] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:30:27] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:30:27] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:30:27] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:30:27] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:30:27] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:30:27] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:30:27] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:30:31] [INFO] ✅ 设备连接成功
+[2026-04-23 20:30:31] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 20:30:31] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 20:30:34] [ERROR] ❌ 启动失败: Failed to get device list: Error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+    at requireSdkRoot (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\appium-adb\lib\helpers.js:77:11)
+    at Function.createADB (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\appium-adb\lib\adb.ts:131:39)
+    at getConnectedDevices (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1880:71)
+    at agentFromAdbDevice (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1938:35)
+    at AndroidMidsceneTools.ensureAgent (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1973:33)
+    at args (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\base-tools.js:104:137)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:331:41)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:36)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error in handler for "Launch": Unable to get connected Android device list, please check https://midscenejs.com/integrate-with-android.html#faq : Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+Failed to get agent or execute action "Launch": Unable to get connected Android device list, please check https://midscenejs.com/integrate-with-android.html#faq : Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+Command failed
+
+[2026-04-23 20:30:34] [INFO] 断开设备连接...
+[2026-04-23 20:30:37] [INFO] ✅ 设备已断开
+[2026-04-23 20:31:06] [INFO] ============================================================
+[2026-04-23 20:31:06] [INFO] 他趣抢礼物自动化脚本启动
+[2026-04-23 20:31:06] [INFO] ============================================================
+[2026-04-23 20:31:06] [INFO] 
+【步骤 1】环境检查
+[2026-04-23 20:31:06] [INFO] 检查 ADB 工具...
+[2026-04-23 20:31:06] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:31:06] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:31:08] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:31:08] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:31:08] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:31:08] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:31:08] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:31:08] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:31:08] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:31:12] [INFO] ✅ 设备连接成功
+[2026-04-23 20:31:12] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 20:31:12] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 20:31:16] [INFO] ✅ 他趣 App 启动成功
+[2026-04-23 20:31:19] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 20:31:23] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776947483158.png
+[2026-04-23 20:31:23] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 20:31:23] [INFO] 检查间隔: 2 秒
+[2026-04-23 20:31:23] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 20:31:23] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 20:31:23] [INFO] 执行抢礼物操作...
+[2026-04-23 20:31:25] [ERROR] ❌ 抢礼物失败: Invalid value for "--prompt" in midscene-android act: Expected string, received boolean
+
+[2026-04-23 20:31:27] [INFO] 
+--- 第 2 次检查 (剩余 29分55秒) ---
+[2026-04-23 20:31:27] [INFO] 执行抢礼物操作...
+[2026-04-23 20:31:30] [ERROR] ❌ 抢礼物失败: Invalid value for "--prompt" in midscene-android act: Expected string, received boolean
+
+[2026-04-23 20:31:32] [INFO] 
+--- 第 3 次检查 (剩余 29分50秒) ---
+[2026-04-23 20:31:32] [INFO] 执行抢礼物操作...
+[2026-04-23 20:31:35] [ERROR] ❌ 抢礼物失败: Invalid value for "--prompt" in midscene-android act: Expected string, received boolean
+
+[2026-04-23 20:31:37] [INFO] 
+--- 第 4 次检查 (剩余 29分45秒) ---
+[2026-04-23 20:31:37] [INFO] 执行抢礼物操作...
+[2026-04-23 20:31:40] [ERROR] ❌ 抢礼物失败: Invalid value for "--prompt" in midscene-android act: Expected string, received boolean
+
+[2026-04-23 20:31:42] [INFO] 
+--- 第 5 次检查 (剩余 29分41秒) ---
+[2026-04-23 20:31:42] [INFO] 执行抢礼物操作...
+[2026-04-23 20:31:44] [ERROR] ❌ 抢礼物失败: Invalid value for "--prompt" in midscene-android act: Expected string, received boolean
+
+[2026-04-23 20:31:46] [INFO] 
+--- 第 6 次检查 (剩余 29分36秒) ---
+[2026-04-23 20:31:46] [INFO] 执行抢礼物操作...
+[2026-04-23 20:31:49] [ERROR] ❌ 抢礼物失败: Invalid value for "--prompt" in midscene-android act: Expected string, received boolean
+
+[2026-04-23 20:31:51] [INFO] 
+--- 第 7 次检查 (剩余 29分31秒) ---
+[2026-04-23 20:31:51] [INFO] 执行抢礼物操作...
+[2026-04-23 20:31:54] [ERROR] ❌ 抢礼物失败: Invalid value for "--prompt" in midscene-android act: Expected string, received boolean
+
+[2026-04-23 20:31:56] [INFO] 
+--- 第 8 次检查 (剩余 29分27秒) ---
+[2026-04-23 20:31:56] [INFO] 执行抢礼物操作...
+[2026-04-23 20:31:58] [ERROR] ❌ 抢礼物失败: Invalid value for "--prompt" in midscene-android act: Expected string, received boolean
+
+[2026-04-23 20:32:00] [INFO] 
+--- 第 9 次检查 (剩余 29分22秒) ---
+[2026-04-23 20:32:00] [INFO] 执行抢礼物操作...
+[2026-04-23 20:32:03] [ERROR] ❌ 抢礼物失败: Invalid value for "--prompt" in midscene-android act: Expected string, received boolean
+
+[2026-04-23 20:32:05] [INFO] 
+--- 第 10 次检查 (剩余 29分18秒) ---
+[2026-04-23 20:32:05] [INFO] 执行抢礼物操作...
+[2026-04-23 20:35:19] [INFO] 检查 ADB 工具...
+[2026-04-23 20:35:20] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:35:20] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:35:22] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:35:22] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:35:22] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:35:22] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:35:22] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:35:22] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:35:22] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:35:26] [INFO] ✅ 设备连接成功
+[2026-04-23 20:35:26] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 20:35:26] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 20:35:30] [INFO] ✅ 他趣 App 启动成功
+[2026-04-23 20:35:33] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 20:35:37] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776947737569.png
+[2026-04-23 20:35:37] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 20:35:37] [INFO] 检查间隔: 2 秒
+[2026-04-23 20:35:37] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 20:35:37] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 20:35:37] [INFO] 执行抢礼物操作...
+[2026-04-23 20:35:40] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Command failed
+
+[2026-04-23 20:35:42] [INFO] 
+--- 第 2 次检查 (剩余 29分55秒) ---
+[2026-04-23 20:35:42] [INFO] 执行抢礼物操作...
+[2026-04-23 20:35:45] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Command failed
+
+[2026-04-23 20:35:47] [INFO] 
+--- 第 3 次检查 (剩余 29分49秒) ---
+[2026-04-23 20:35:47] [INFO] 执行抢礼物操作...
+[2026-04-23 20:35:50] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Command failed
+
+[2026-04-23 20:35:52] [INFO] 
+--- 第 4 次检查 (剩余 29分44秒) ---
+[2026-04-23 20:35:52] [INFO] 执行抢礼物操作...
+[2026-04-23 20:37:22] [INFO] 
+⚠️ 用户中断监控
+[2026-04-23 20:37:22] [INFO] 
+============================================================
+[2026-04-23 20:37:22] [INFO] 监控结束
+[2026-04-23 20:37:22] [INFO] 总检查次数: 4
+[2026-04-23 20:37:22] [INFO] 成功抢到礼物: 0 个
+[2026-04-23 20:37:22] [INFO] 运行时长: 105 秒
+[2026-04-23 20:37:22] [INFO] ============================================================
+[2026-04-23 20:37:22] [INFO] 断开设备连接...
+[2026-04-23 20:37:25] [INFO] ✅ 设备已断开
+[2026-04-23 20:37:25] [INFO] 📄 报告已保存: grab_report_20260423_203725.txt
+[2026-04-23 20:40:33] [INFO] 检查 ADB 工具...
+[2026-04-23 20:40:33] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:40:33] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:40:35] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:40:35] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:40:35] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:40:35] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:40:35] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:40:35] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:40:35] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:40:41] [INFO] ✅ 设备连接成功
+[2026-04-23 20:40:41] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 20:40:41] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 20:40:46] [INFO] ✅ 他趣 App 启动成功
+[2026-04-23 20:40:49] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 20:40:53] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776948053345.png
+[2026-04-23 20:40:53] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 20:40:53] [INFO] 检查间隔: 2 秒
+[2026-04-23 20:40:53] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 20:40:53] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 20:40:53] [INFO] 执行抢礼物操作...
+[2026-04-23 20:40:56] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Command failed
+
+[2026-04-23 20:40:58] [INFO] 
+--- 第 2 次检查 (剩余 29分54秒) ---
+[2026-04-23 20:40:58] [INFO] 执行抢礼物操作...
+[2026-04-23 20:41:02] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Command failed
+
+[2026-04-23 20:41:04] [INFO] 
+--- 第 3 次检查 (剩余 29分49秒) ---
+[2026-04-23 20:41:04] [INFO] 执行抢礼物操作...
+[2026-04-23 20:41:07] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Command failed
+
+[2026-04-23 20:41:09] [INFO] 
+--- 第 4 次检查 (剩余 29分44秒) ---
+[2026-04-23 20:41:09] [INFO] 执行抢礼物操作...
+[2026-04-23 20:41:12] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: glm
+Command failed
+
+[2026-04-23 20:41:13] [INFO] 
+⚠️ 用户中断监控
+[2026-04-23 20:41:13] [INFO] 
+============================================================
+[2026-04-23 20:41:13] [INFO] 监控结束
+[2026-04-23 20:41:13] [INFO] 总检查次数: 4
+[2026-04-23 20:41:13] [INFO] 成功抢到礼物: 0 个
+[2026-04-23 20:41:13] [INFO] 运行时长: 19 秒
+[2026-04-23 20:41:13] [INFO] ============================================================
+[2026-04-23 20:41:13] [INFO] 断开设备连接...
+[2026-04-23 20:41:15] [INFO] ✅ 设备已断开
+[2026-04-23 20:41:15] [INFO] 📄 报告已保存: grab_report_20260423_204115.txt
+[2026-04-23 20:42:22] [INFO] 检查 ADB 工具...
+[2026-04-23 20:42:22] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:42:22] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:42:25] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:42:25] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:42:25] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:42:25] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:42:25] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:42:25] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:42:25] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:42:29] [INFO] ✅ 设备连接成功
+[2026-04-23 20:42:29] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 20:42:29] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 20:42:33] [INFO] ✅ 他趣 App 启动成功
+[2026-04-23 20:42:36] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 20:42:40] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776948160849.png
+[2026-04-23 20:42:40] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 20:42:40] [INFO] 检查间隔: 2 秒
+[2026-04-23 20:42:40] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 20:42:40] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 20:42:40] [INFO] 执行抢礼物操作...
+[2026-04-23 20:42:43] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Command failed
+
+[2026-04-23 20:42:45] [INFO] 
+--- 第 2 次检查 (剩余 29分54秒) ---
+[2026-04-23 20:42:45] [INFO] 执行抢礼物操作...
+[2026-04-23 20:42:48] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Command failed
+
+[2026-04-23 20:42:50] [INFO] 
+--- 第 3 次检查 (剩余 29分49秒) ---
+[2026-04-23 20:42:50] [INFO] 执行抢礼物操作...
+[2026-04-23 20:42:53] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Command failed
+
+[2026-04-23 20:42:55] [INFO] 
+--- 第 4 次检查 (剩余 29分44秒) ---
+[2026-04-23 20:42:55] [INFO] 执行抢礼物操作...
+[2026-04-23 20:44:26] [INFO] 
+⚠️ 用户中断监控
+[2026-04-23 20:44:26] [INFO] 
+============================================================
+[2026-04-23 20:44:26] [INFO] 监控结束
+[2026-04-23 20:44:26] [INFO] 总检查次数: 4
+[2026-04-23 20:44:26] [INFO] 成功抢到礼物: 0 个
+[2026-04-23 20:44:26] [INFO] 运行时长: 105 秒
+[2026-04-23 20:44:26] [INFO] ============================================================
+[2026-04-23 20:44:26] [INFO] 断开设备连接...
+[2026-04-23 20:44:28] [INFO] ✅ 设备已断开
+[2026-04-23 20:44:28] [INFO] 📄 报告已保存: grab_report_20260423_204428.txt
+[2026-04-23 20:44:48] [INFO] 检查 ADB 工具...
+[2026-04-23 20:44:48] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:44:48] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:44:51] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:44:51] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:44:51] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:44:51] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:44:51] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:44:51] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:44:51] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:44:55] [INFO] ✅ 设备连接成功
+[2026-04-23 20:44:55] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 20:44:55] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 20:44:59] [INFO] ✅ 他趣 App 启动成功
+[2026-04-23 20:45:02] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 20:45:06] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776948306864.png
+[2026-04-23 20:45:06] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 20:45:06] [INFO] 检查间隔: 2 秒
+[2026-04-23 20:45:06] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 20:45:06] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 20:45:06] [INFO] 执行抢礼物操作...
+[2026-04-23 20:45:10] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Command failed
+
+[2026-04-23 20:45:12] [INFO] 
+--- 第 2 次检查 (剩余 29分54秒) ---
+[2026-04-23 20:45:12] [INFO] 执行抢礼物操作...
+[2026-04-23 20:45:15] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Command failed
+
+[2026-04-23 20:45:17] [INFO] 
+--- 第 3 次检查 (剩余 29分49秒) ---
+[2026-04-23 20:45:17] [INFO] 执行抢礼物操作...
+[2026-04-23 20:45:20] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+Error executing act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Failed to execute act: Invalid MIDSCENE_MODEL_FAMILY value: openai-compatible
+Command failed
+
+[2026-04-23 20:45:21] [INFO] 
+⚠️ 用户中断监控
+[2026-04-23 20:45:21] [INFO] 
+============================================================
+[2026-04-23 20:45:21] [INFO] 监控结束
+[2026-04-23 20:45:21] [INFO] 总检查次数: 3
+[2026-04-23 20:45:21] [INFO] 成功抢到礼物: 0 个
+[2026-04-23 20:45:21] [INFO] 运行时长: 14 秒
+[2026-04-23 20:45:21] [INFO] ============================================================
+[2026-04-23 20:45:21] [INFO] 断开设备连接...
+[2026-04-23 20:45:24] [INFO] ✅ 设备已断开
+[2026-04-23 20:45:24] [INFO] 📄 报告已保存: grab_report_20260423_204524.txt
+[2026-04-23 20:46:50] [INFO] 检查 ADB 工具...
+[2026-04-23 20:46:50] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:46:50] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:46:53] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:46:53] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:46:53] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:46:53] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:46:53] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:46:53] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:46:53] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:46:58] [INFO] ✅ 设备连接成功
+[2026-04-23 20:46:58] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 20:46:58] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 20:47:04] [INFO] ✅ 他趣 App 启动成功
+[2026-04-23 20:47:07] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 20:47:11] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776948431717.png
+[2026-04-23 20:47:11] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 20:47:11] [INFO] 检查间隔: 2 秒
+[2026-04-23 20:47:11] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 20:47:11] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 20:47:11] [INFO] 执行抢礼物操作...
+[2026-04-23 20:48:42] [INFO] 检查 ADB 工具...
+[2026-04-23 20:48:42] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:48:42] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:48:44] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:48:44] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:48:44] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:48:44] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:48:44] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:48:44] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:48:44] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:48:48] [INFO] ✅ 设备连接成功
+[2026-04-23 20:48:48] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 20:48:48] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 20:48:54] [INFO] ✅ 他趣 App 启动成功
+[2026-04-23 20:48:57] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 20:49:01] [ERROR] ❌ 抢礼物失败: 命令超时
+[2026-04-23 20:49:01] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776948541579.png
+[2026-04-23 20:49:01] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 20:49:01] [INFO] 检查间隔: 2 秒
+[2026-04-23 20:49:01] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 20:49:01] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 20:49:01] [INFO] 执行抢礼物操作...
+[2026-04-23 20:50:38] [ERROR] ❌ 抢礼物失败: 命令超时
+[2026-04-23 20:50:40] [INFO] 
+--- 第 2 次检查 (剩余 28分21秒) ---
+[2026-04-23 20:50:40] [INFO] 执行抢礼物操作...
+[2026-04-23 20:52:29] [ERROR] ❌ 抢礼物失败: 命令超时
+[2026-04-23 20:52:31] [INFO] 
+--- 第 3 次检查 (剩余 26分30秒) ---
+[2026-04-23 20:52:31] [INFO] 执行抢礼物操作...
+[2026-04-23 20:53:10] [INFO] 
+⚠️ 用户中断监控
+[2026-04-23 20:53:10] [INFO] 
+============================================================
+[2026-04-23 20:53:10] [INFO] 监控结束
+[2026-04-23 20:53:10] [INFO] 总检查次数: 3
+[2026-04-23 20:53:10] [INFO] 成功抢到礼物: 0 个
+[2026-04-23 20:53:10] [INFO] 运行时长: 248 秒
+[2026-04-23 20:53:10] [INFO] ============================================================
+[2026-04-23 20:53:10] [INFO] 断开设备连接...
+[2026-04-23 20:53:13] [INFO] ✅ 设备已断开
+[2026-04-23 20:53:13] [INFO] 📄 报告已保存: grab_report_20260423_205313.txt
+[2026-04-23 20:58:17] [INFO] 检查 ADB 工具...
+[2026-04-23 20:58:17] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:58:17] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:58:21] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:58:21] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:58:21] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:58:21] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:58:21] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:58:21] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:58:21] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:58:23] [ERROR] ❌ 设备连接失败: dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+Error: Unable to connect to device ANGYVB3C04003929: Error: ADB error with device ANGYVB3C04003929 when calling shell, please check https://midscenejs.com/integrate-with-android.html#faq : Error executing adbExec. Original error: ''adb' executable is not found neither in the process working folder (C:\Users\Lenovo\.workbuddy\skills\android-device-automation) nor in any folders specified in the PATH environment variable (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64;C:\Users\Lenovo\.workbuddy\skills\android-device-automation\node_modules\.bin;C:\Users\Lenovo\.workbuddy\skills\node_modules\.bin;C:\Users\Lenovo\.workbuddy\node_modules\.bin;C:\Users\Lenovo\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\WINDOWS\System32;C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\;D:\python\Scripts\;D:\python\;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;D:\Programs\Microsoft VS Code\bin;D:\JZDS360Ly\ollama_location;C:\Users\Lenovo\AppData\Roaming\npm;C:\ProgramData\Lenovo\GitHubDesktop\bin;D:\WorkBuddy\bin;C:\Users\Lenovo\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.1-full_build\bin;;C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64)'; Command output: <empty>
+    at C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:911:29
+    at AndroidDevice.connect (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:868:25)
+    at agentFromAdbDevice (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1944:9)
+    at AndroidMidsceneTools.ensureAgent (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1973:27)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1988:39)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+
+[2026-04-23 20:58:35] [INFO] 检查 ADB 工具...
+[2026-04-23 20:58:35] [INFO] ✅ ADB 工具正常
+[2026-04-23 20:58:35] [INFO] 检查 Midscene 工具...
+[2026-04-23 20:58:37] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 20:58:37] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 20:58:37] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 20:58:37] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 20:58:37] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 20:58:37] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 20:58:37] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 20:58:40] [ERROR] ❌ 设备连接失败: dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+Error: Unable to connect to device ANGYVB3C04003929: Error: ADB error with device ANGYVB3C04003929 when calling shell, please check https://midscenejs.com/integrate-with-android.html#faq : Error executing adbExec. Original error: ''adb' executable is not found neither in the process working folder (C:\Users\Lenovo\.workbuddy\skills\android-device-automation) nor in any folders specified in the PATH environment variable (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64;C:\Users\Lenovo\.workbuddy\skills\android-device-automation\node_modules\.bin;C:\Users\Lenovo\.workbuddy\skills\node_modules\.bin;C:\Users\Lenovo\.workbuddy\node_modules\.bin;C:\Users\Lenovo\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\WINDOWS\System32;C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\;D:\python\Scripts\;D:\python\;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;D:\Programs\Microsoft VS Code\bin;D:\JZDS360Ly\ollama_location;C:\Users\Lenovo\AppData\Roaming\npm;C:\ProgramData\Lenovo\GitHubDesktop\bin;D:\WorkBuddy\bin;C:\Users\Lenovo\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.1-full_build\bin;;C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64)'; Command output: <empty>
+    at C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:911:29
+    at AndroidDevice.connect (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:868:25)
+    at agentFromAdbDevice (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1944:9)
+    at AndroidMidsceneTools.ensureAgent (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1973:27)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1988:39)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+
+[2026-04-23 21:09:08] [INFO] 检查 ADB 工具...
+[2026-04-23 21:09:08] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:09:08] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:09:11] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:09:11] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:09:11] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:09:11] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:09:11] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:09:11] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:09:11] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:09:17] [INFO] ✅ 设备连接成功
+[2026-04-23 21:09:17] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:09:17] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 21:09:19] [ERROR] ❌ 启动失败: Failed to get device list: Error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+    at requireSdkRoot (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\appium-adb\lib\helpers.js:77:11)
+    at Function.createADB (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\appium-adb\lib\adb.ts:131:39)
+    at getConnectedDevices (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1880:71)
+    at agentFromAdbDevice (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1938:35)
+    at AndroidMidsceneTools.ensureAgent (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\dist\lib\cli.js:1973:33)
+    at args (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\base-tools.js:104:137)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:331:41)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:36)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error in handler for "Launch": Unable to get connected Android device list, please check https://midscenejs.com/integrate-with-android.html#faq : Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+Failed to get agent or execute action "Launch": Unable to get connected Android device list, please check https://midscenejs.com/integrate-with-android.html#faq : Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details
+Command failed
+
+[2026-04-23 21:09:19] [INFO] 断开设备连接...
+[2026-04-23 21:09:22] [INFO] ✅ 设备已断开
+[2026-04-23 21:13:19] [INFO] 检查 ADB 工具...
+[2026-04-23 21:13:19] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:13:19] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:13:21] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:13:21] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:13:21] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:13:21] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:13:21] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:13:21] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:13:21] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:13:25] [INFO] ✅ 设备连接成功
+[2026-04-23 21:13:25] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:13:25] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 21:13:31] [INFO] ✅ 他趣 App 启动成功
+[2026-04-23 21:13:34] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 21:13:39] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776950018918.png
+[2026-04-23 21:13:39] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 21:13:39] [INFO] 检查间隔: 2 秒
+[2026-04-23 21:13:39] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 21:13:39] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 21:13:39] [INFO] 执行抢礼物操作...
+[2026-04-23 21:14:04] [INFO] 
+============================================================
+[2026-04-23 21:14:04] [INFO] 监控结束
+[2026-04-23 21:14:04] [INFO] 总检查次数: 1
+[2026-04-23 21:14:04] [INFO] 成功抢到礼物: 0 个
+[2026-04-23 21:14:04] [INFO] 运行时长: 25 秒
+[2026-04-23 21:14:04] [INFO] ============================================================
+[2026-04-23 21:14:04] [INFO] 断开设备连接...
+[2026-04-23 21:14:07] [INFO] ✅ 设备已断开
+[2026-04-23 21:14:07] [INFO] 📄 报告已保存: grab_report_20260423_211407.txt
+[2026-04-23 21:15:07] [INFO] 检查 ADB 工具...
+[2026-04-23 21:15:07] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:15:07] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:15:10] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:15:10] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:15:10] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:15:10] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:15:10] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:15:10] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:15:10] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:15:15] [INFO] ✅ 设备连接成功
+[2026-04-23 21:15:15] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:15:15] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 21:15:20] [INFO] ✅ 他趣 App 启动成功
+[2026-04-23 21:15:23] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 21:15:27] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776950127824.png
+[2026-04-23 21:15:27] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 21:15:27] [INFO] 检查间隔: 2 秒
+[2026-04-23 21:15:27] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 21:15:27] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 21:15:27] [INFO] 执行抢礼物操作...
+[2026-04-23 21:15:52] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:15:54] [INFO] 
+--- 第 2 次检查 (剩余 29分33秒) ---
+[2026-04-23 21:15:54] [INFO] 执行抢礼物操作...
+[2026-04-23 21:16:57] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobi8t7k.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobi8t7k.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\fce34c63-10e8-4c1d-9b52-42a4aa417cff.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobi8zed.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobi8zed.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\0030bed8-ca01-4f33-b470-c2c9665ee98f.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobi912q.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobi912q.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\0c6b2048-66f1-4134-9976-78a81f2be426.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobi98xj.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobi98xj.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\dc06e86b-3b42-4856-9951-91d7c7ee7873.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobi9ac6.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobi9ac6.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\bf9d7391-44cf-4d25-9cf3-3a642430d89c.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobi9pis.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobi9pis.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\fc6f4288-d236-43d7-8aa3-008a7d389d11.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobi9qut.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobi9qut.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\eab2e826-f07b-4d7e-bb3b-a09eeb25a924.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobi9xoi.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobi9xoi.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\8f43b813-29a4-4464-afd1-2c7656f2ceca.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobi9yyl.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobi9yyl.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\a02c157c-4811-4691-be59-b009990aff93.png'
+Error executing act: Task failed: No gifts found in the chat interface or promotional banners.
+
+Error: Task failed: No gifts found in the chat interface or promotional banners.
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: No gifts found in the chat interface or promotional banners.
+
+Error: Task failed: No gifts found in the chat interface or promotional banners.
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:16:59] [INFO] 
+--- 第 3 次检查 (剩余 28分27秒) ---
+[2026-04-23 21:16:59] [INFO] 执行抢礼物操作...
+[2026-04-23 21:17:42] [INFO] ✅ 抢礼物操作成功
+[2026-04-23 21:17:42] [INFO] 🎉 累计抢到 1 个礼物！
+[2026-04-23 21:17:44] [INFO] 
+--- 第 4 次检查 (剩余 27分42秒) ---
+[2026-04-23 21:17:44] [INFO] 执行抢礼物操作...
+[2026-04-23 21:18:36] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobib69x.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobib69x.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\cef7d3a0-d4b0-4322-baf2-9e62757d93d5.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobibd2f.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobibd2f.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\1242106e-f848-4b50-a970-b3ad7367021f.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobibejn.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobibejn.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\b0681b69-15d8-4ce7-a32b-704d836775e8.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobibldo.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobibldo.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\3eb479d9-3b8c-4311-89b4-f6a9222b97f4.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobibmnl.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobibmnl.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\31d8fe27-e0cb-4faa-be05-197cb1fa2903.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobibtnp.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobibtnp.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\cf08a4a8-6c8a-4487-9d60-366d1a7aea6a.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobibv04.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobibv04.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\b3270223-336b-43fc-8da5-bedd16238c3e.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobic1s7.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobic1s7.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\48242daf-79e1-4776-a5ec-17242e88630e.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobic30j.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobic30j.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\565d36b5-deaa-419e-9438-0768923ebd24.png'
+Error executing act: Task failed: No gifts found
+
+Error: Task failed: No gifts found
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: No gifts found
+
+Error: Task failed: No gifts found
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:18:38] [INFO] 
+--- 第 5 次检查 (剩余 26分49秒) ---
+[2026-04-23 21:18:38] [INFO] 执行抢礼物操作...
+[2026-04-23 21:19:33] [INFO] ✅ 抢礼物操作成功
+[2026-04-23 21:19:33] [INFO] 🎉 累计抢到 2 个礼物！
+[2026-04-23 21:19:35] [INFO] 
+--- 第 6 次检查 (剩余 25分52秒) ---
+[2026-04-23 21:19:35] [INFO] 执行抢礼物操作...
+[2026-04-23 21:20:11] [INFO] ✅ 抢礼物操作成功
+[2026-04-23 21:20:11] [INFO] 🎉 累计抢到 3 个礼物！
+[2026-04-23 21:20:13] [INFO] 
+--- 第 7 次检查 (剩余 25分14秒) ---
+[2026-04-23 21:20:13] [INFO] 执行抢礼物操作...
+[2026-04-23 21:20:48] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiecf7.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiecf7.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\59af82b4-7c9d-416a-96c2-bad7edc2d146.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiej1i.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiej1i.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\1742bbd3-feb3-4ef1-8556-64b5af9a44e8.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobielte.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobielte.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\6db8531a-1dfb-4b90-955b-999ae83fab8c.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobietwr.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobietwr.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\e501b96b-9147-46d3-9ebb-cc0b23bf7d52.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiewop.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiewop.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\d2e9391f-4be7-44f4-82b4-5c05982f7ec8.png'
+Error executing act: Task failed: 没找到
+
+Error: Task failed: 没找到
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: 没找到
+
+Error: Task failed: 没找到
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:20:50] [INFO] 
+--- 第 8 次检查 (剩余 24分37秒) ---
+[2026-04-23 21:20:50] [INFO] 执行抢礼物操作...
+[2026-04-23 21:22:04] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobif5dd.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobif5dd.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\3304a231-59f3-4ba8-b3eb-67ca709fbf20.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobifbmx.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobifbmx.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\c65f49ed-78ef-4569-b94a-f1b2092b5b49.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe 0 0 0 0 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobifdtp.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobifdtp.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\362bba64-7c8e-4c3a-a09f-43b3e10ce1df.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiflm8.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiflm8.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\b1a17317-894d-4c89-b50f-5043f8d50e83.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe 0 0 0 0 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobifn2e.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobifn2e.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\17535d63-fc87-46be-979f-63d87b80afe0.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobift5q.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobift5q.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\6a1b9b89-6312-403f-a073-b06850d6ce3a.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe 0 0 0 0 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobifui9.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobifui9.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\b5647e20-f73b-4544-83bc-663b9f729b43.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobig10f.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobig10f.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\bbd2343f-bb02-43e0-a0d9-eb084de8b18f.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe 0 0 0 0 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobig23r.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobig23r.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\5b239d16-8109-475c-9c37-d97e06b358d5.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobig8l4.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobig8l4.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\c4f898a3-04f8-4069-a352-6e85adc61433.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe 0 0 0 0 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobig9oe.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobig9oe.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\fd4f993f-5b96-4077-9543-49c1098a8acc.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobighkk.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobighkk.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\04a376db-a4c4-44d2-82ce-a31b95fdf5b4.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe 0 0 0 0 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobigiog.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobigiog.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\e65b4e26-de68-4d65-9ab1-ec896031cbf2.png'
+Error executing act: Task failed: 没有找到聊天界面或礼物图标，请检查应用设置或重新启动应用以获取最新状态。
+
+Error: Task failed: 没有找到聊天界面或礼物图标，请检查应用设置或重新启动应用以获取最新状态。
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: 没有找到聊天界面或礼物图标，请检查应用设置或重新启动应用以获取最新状态。
+
+Error: Task failed: 没有找到聊天界面或礼物图标，请检查应用设置或重新启动应用以获取最新状态。
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:22:06] [INFO] 
+--- 第 9 次检查 (剩余 23分21秒) ---
+[2026-04-23 21:22:06] [INFO] 执行抢礼物操作...
+[2026-04-23 21:23:11] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobigrrm.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobigrrm.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\7a415ab8-ff67-4c6c-8718-22e187d04364.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobih5gk.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobih5gk.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\8ef396aa-1fd8-4db0-a133-14d057437599.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobih6xi.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobih6xi.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\10ead8f9-f10a-44fa-bc51-6b5f4770dfe6.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiheps.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiheps.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\a0851005-2064-4f08-ab75-fae5440a30bd.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobihfvr.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobihfvr.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\9b67b868-db29-40a1-ae12-9e4d59670679.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobihmx3.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobihmx3.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\aaa490b2-c263-4f62-9855-e1dfc50f0a1c.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiho93.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiho93.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\60745f6e-7e3a-4871-840a-d72606f44513.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobihxaf.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobihxaf.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\b33b89f7-8653-4336-b048-d10a68996d54.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobihynf.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobihynf.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\f632137d-5b65-40a2-92c7-c8ce2854fff6.png'
+Error executing act: Task failed: 没找到
+
+Error: Task failed: 没找到
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: 没找到
+
+Error: Task failed: 没找到
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:23:13] [INFO] 
+--- 第 10 次检查 (剩余 22分14秒) ---
+[2026-04-23 21:23:13] [INFO] 执行抢礼物操作...
+[2026-04-23 21:23:35] [INFO] 检查 ADB 工具...
+[2026-04-23 21:23:35] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:23:35] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:23:38] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:23:38] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:23:38] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:23:38] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:23:38] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:23:38] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:23:38] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:23:41] [INFO] ✅ 设备连接成功
+[2026-04-23 21:23:41] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:23:41] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 21:23:47] [INFO] ✅ 他趣 App 启动成功
+[2026-04-23 21:23:50] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 21:23:54] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776950634834.png
+[2026-04-23 21:23:54] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 21:23:54] [INFO] 检查间隔: 2 秒
+[2026-04-23 21:23:54] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 21:23:54] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 21:23:54] [INFO] 执行抢礼物操作...
+[2026-04-23 21:24:10] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:24:12] [INFO] 
+--- 第 2 次检查 (剩余 29分42秒) ---
+[2026-04-23 21:24:12] [INFO] 执行抢礼物操作...
+[2026-04-23 21:24:34] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:24:36] [INFO] 
+--- 第 3 次检查 (剩余 29分18秒) ---
+[2026-04-23 21:24:36] [INFO] 执行抢礼物操作...
+[2026-04-23 21:24:49] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:24:51] [INFO] 
+--- 第 4 次检查 (剩余 29分3秒) ---
+[2026-04-23 21:24:51] [INFO] 执行抢礼物操作...
+[2026-04-23 21:25:02] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobikbc9.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobikbc9.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\7ea5581b-0751-43bf-a5fc-ba8e21ac9094.png'
+Error executing act: Task failed: No error message provided
+Checking for gifts in the chat interface
+Error: Task failed: No error message provided
+Checking for gifts in the chat interface
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: No error message provided
+Checking for gifts in the chat interface
+Error: Task failed: No error message provided
+Checking for gifts in the chat interface
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:25:04] [INFO] 
+--- 第 5 次检查 (剩余 28分50秒) ---
+[2026-04-23 21:25:04] [INFO] 执行抢礼物操作...
+[2026-04-23 21:25:33] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:25:35] [INFO] 
+--- 第 6 次检查 (剩余 28分19秒) ---
+[2026-04-23 21:25:35] [INFO] 执行抢礼物操作...
+[2026-04-23 21:25:59] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:26:01] [INFO] 
+--- 第 7 次检查 (剩余 27分52秒) ---
+[2026-04-23 21:26:01] [INFO] 执行抢礼物操作...
+[2026-04-23 21:26:25] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:26:27] [INFO] 
+--- 第 8 次检查 (剩余 27分27秒) ---
+[2026-04-23 21:26:27] [INFO] 执行抢礼物操作...
+[2026-04-23 21:30:36] [ERROR] ❌ 抢礼物失败: 命令超时
+[2026-04-23 21:30:38] [INFO] 
+--- 第 9 次检查 (剩余 23分16秒) ---
+[2026-04-23 21:30:38] [INFO] 执行抢礼物操作...
+[2026-04-23 21:30:51] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:30:53] [INFO] 
+--- 第 10 次检查 (剩余 23分0秒) ---
+[2026-04-23 21:30:53] [INFO] 执行抢礼物操作...
+[2026-04-23 21:31:40] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobis2vc.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobis2vc.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\a74df0b6-99a8-4ac7-ba77-d75023beb699.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobis9eo.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobis9eo.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\9615b4d6-7a6e-465b-8ad0-91d506483dfd.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobisb5h.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobisb5h.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\6109eed8-41cc-4e0c-a118-45486cd9a65f.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobisgzm.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobisgzm.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\bd4bfa58-6b63-4dad-89b5-10c9a6b15c27.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobisibn.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobisibn.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\02754ea6-b454-418c-89f8-d7687d7c2673.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobisnk4.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobisnk4.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\09b4b468-3739-4bb0-ad2e-36516e9240be.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobisoz5.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobisoz5.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\3f739bb8-9463-4230-9df7-7cff3f532146.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobisuyd.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobisuyd.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\12b54f2b-e087-4247-bb03-a178e205a2b0.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiswfs.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiswfs.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\6861ae86-e9c1-48ef-b43a-1f7e910fd8c2.png'
+Error executing act: Task failed: No gift found
+
+Error: Task failed: No gift found
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: No gift found
+
+Error: Task failed: No gift found
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:31:42] [INFO] 
+--- 第 11 次检查 (剩余 22分12秒) ---
+[2026-04-23 21:31:42] [INFO] 执行抢礼物操作...
+[2026-04-23 21:32:31] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobit4ms.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobit4ms.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\faa1c072-9ec0-4fc7-909e-e5c86b9b2d95.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobitb94.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobitb94.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\ec507284-7dac-47d2-95ee-c845f60ecc63.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobitcrt.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobitcrt.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\e4033646-8736-4db3-8741-5b62a6b693c7.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobitj7b.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobitj7b.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\dc733ffc-d32c-46c8-adbd-dd70ce5f34e1.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobitkke.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobitkke.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\3ef7e777-bbb0-428b-8d14-257a2d443dad.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobitq9d.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobitq9d.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\1a09bf13-07fb-42d4-808b-1e8d62b5ed0c.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobitrnn.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobitrnn.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\06d2fd01-bb4e-405d-8438-23002e45c762.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobitxd0.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobitxd0.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\4ca4f2e5-8408-42d9-b383-3deec2bc55d7.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobitypj.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobitypj.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\b9a84614-bffd-4d90-a339-edbfd3b556d5.png'
+Error executing act: Task failed: 没找到
+
+Error: Task failed: 没找到
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: 没找到
+
+Error: Task failed: 没找到
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:32:33] [INFO] 
+--- 第 12 次检查 (剩余 21分21秒) ---
+[2026-04-23 21:32:33] [INFO] 执行抢礼物操作...
+[2026-04-23 21:33:28] [INFO] ✅ 抢礼物操作成功
+[2026-04-23 21:33:28] [INFO] 🎉 累计抢到 1 个礼物！
+[2026-04-23 21:33:30] [INFO] 
+--- 第 13 次检查 (剩余 20分24秒) ---
+[2026-04-23 21:33:30] [INFO] 执行抢礼物操作...
+[2026-04-23 21:33:45] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobivg9z.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobivg9z.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\022c430b-dfd5-4238-9024-9015ebc8260c.png'
+Cannot convert action Wait to yaml flow. Will ignore it.
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobivnxb.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobivnxb.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\da354dc3-6c62-438b-abb9-3f54ca499a11.png'
+Error executing act: Error converting plans to executable tasks: Error: Action type 'Wait' not found, plans: [{"type":"Wait","param":{"timeMs":10000}}]
+Error: Error converting plans to executable tasks: Error: Action type 'Wait' not found, plans: [{"type":"Wait","param":{"timeMs":10000}}]
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:407:15)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:289:36)
+    at TaskRunner.appendErrorPlan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:410:5)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Error converting plans to executable tasks: Error: Action type 'Wait' not found, plans: [{"type":"Wait","param":{"timeMs":10000}}]
+Error: Error converting plans to executable tasks: Error: Action type 'Wait' not found, plans: [{"type":"Wait","param":{"timeMs":10000}}]
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:407:15)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:289:36)
+    at TaskRunner.appendErrorPlan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:410:5)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:33:47] [INFO] 
+--- 第 14 次检查 (剩余 20分6秒) ---
+[2026-04-23 21:33:47] [INFO] 执行抢礼物操作...
+[2026-04-23 21:34:35] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobivt25.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobivt25.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\44bcd764-66b2-4a2d-89fe-ff8d4973bd64.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobivzac.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobivzac.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\59ae7c11-dd2b-44e1-af76-41fd268c0239.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiw14i.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiw14i.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\d31a6a67-d2bc-4881-8a0d-9b14bfeba57a.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiw6y6.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiw6y6.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\1b50d4b1-b7fe-4364-86a5-00bc8f63ad9d.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiw8gz.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiw8gz.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\d773fbb0-81f3-4d02-919b-cf474eb88dbc.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiweic.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiweic.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\887ab117-1e55-43a7-9d7d-3f417c74891f.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiwfu3.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiwfu3.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\597a0141-7e7a-41cb-81f6-4ddf48758a8d.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiwlwb.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiwlwb.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\22749bbb-b406-47bd-b777-24949d5decab.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiwn7x.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiwn7x.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\39fe33c4-2f99-4dd8-b484-feed94cde709.png'
+Error executing act: Task failed: 没找到
+
+Error: Task failed: 没找到
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: 没找到
+
+Error: Task failed: 没找到
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:34:37] [INFO] 
+--- 第 15 次检查 (剩余 19分17秒) ---
+[2026-04-23 21:34:37] [INFO] 执行抢礼物操作...
+[2026-04-23 21:34:55] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiww5a.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiww5a.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\b0f7265b-1b9f-40c5-9308-4dca0c358fd6.png'
+[Midscene] AI call failed (attempt 1/2), retrying in 2000ms... Error: Request timed out.
+[Midscene] call AI error APIConnectionError: Connection error.
+    at OpenAI.makeRequest (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\openai\src\client.ts:671:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:492:26)
+    ... 7 lines matching cause stack trace ...
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20) {
+  status: undefined,
+  headers: undefined,
+  requestID: undefined,
+  error: undefined,
+  code: undefined,
+  param: undefined,
+  type: undefined,
+  cause: TypeError: fetch failed
+      at Object.fetch (node:internal/deps/undici/undici:11730:11)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at OpenAI.fetchWithTimeout (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\openai\src\client.ts:795:14)
+      at OpenAI.makeRequest (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\openai\src\client.ts:626:22)
+      at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:492:26)
+      at plan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\llm-planning.ts:238:7)
+      at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:368:28)
+      at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+      at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+      at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+      at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+      at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+      at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20) {
+    cause: Error: getaddrinfo ENOTFOUND open.bigmodel.cn
+        at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'open.bigmodel.cn'
+    }
+  }
+}
+Error executing act: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+Error: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+    at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:597:22)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at plan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\llm-planning.ts:238:7)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:368:28)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+Error: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+    at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:597:22)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at plan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\llm-planning.ts:238:7)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:368:28)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:34:57] [INFO] 
+--- 第 16 次检查 (剩余 18分57秒) ---
+[2026-04-23 21:34:57] [INFO] 执行抢礼物操作...
+[2026-04-23 21:36:18] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobiyvbe.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobiyvbe.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\9a45165a-58e9-4eda-9901-2c55762fe0b4.png'
+[Midscene] AI call failed (attempt 1/2), retrying in 2000ms... Error: Connection error.
+[Midscene] call AI error APIConnectionError: Connection error.
+    at OpenAI.makeRequest (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\openai\src\client.ts:671:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:492:26)
+    ... 7 lines matching cause stack trace ...
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20) {
+  status: undefined,
+  headers: undefined,
+  requestID: undefined,
+  error: undefined,
+  code: undefined,
+  param: undefined,
+  type: undefined,
+  cause: TypeError: fetch failed
+      at Object.fetch (node:internal/deps/undici/undici:11730:11)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at OpenAI.fetchWithTimeout (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\openai\src\client.ts:795:14)
+      at OpenAI.makeRequest (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\openai\src\client.ts:626:22)
+      at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:492:26)
+      at plan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\llm-planning.ts:238:7)
+      at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:368:28)
+      at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+      at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+      at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+      at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+      at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+      at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20) {
+    cause: Error: getaddrinfo ENOTFOUND open.bigmodel.cn
+        at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'open.bigmodel.cn'
+    }
+  }
+}
+Error executing act: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+Error: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+    at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:597:22)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at plan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\llm-planning.ts:238:7)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:368:28)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+Error: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+    at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:597:22)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at plan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\llm-planning.ts:238:7)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:368:28)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:36:20] [INFO] 
+--- 第 17 次检查 (剩余 17分34秒) ---
+[2026-04-23 21:36:20] [INFO] 执行抢礼物操作...
+[2026-04-23 21:37:38] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj0lto.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj0lto.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\86ccbb8f-6332-4fd5-937d-e14fe9ef9e4c.png'
+[Midscene] AI call failed (attempt 1/2), retrying in 2000ms... Error: Connection error.
+[Midscene] call AI error APIConnectionError: Connection error.
+    at OpenAI.makeRequest (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\openai\src\client.ts:671:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:492:26)
+    ... 7 lines matching cause stack trace ...
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20) {
+  status: undefined,
+  headers: undefined,
+  requestID: undefined,
+  error: undefined,
+  code: undefined,
+  param: undefined,
+  type: undefined,
+  cause: TypeError: fetch failed
+      at Object.fetch (node:internal/deps/undici/undici:11730:11)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at OpenAI.fetchWithTimeout (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\openai\src\client.ts:795:14)
+      at OpenAI.makeRequest (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\openai\src\client.ts:626:22)
+      at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:492:26)
+      at plan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\llm-planning.ts:238:7)
+      at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:368:28)
+      at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+      at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+      at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+      at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+      at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+      at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20) {
+    cause: Error: getaddrinfo ENOTFOUND open.bigmodel.cn
+        at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'open.bigmodel.cn'
+    }
+  }
+}
+Error executing act: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+Error: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+    at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:597:22)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at plan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\llm-planning.ts:238:7)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:368:28)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+Error: failed to call AI model service (glm-4v-flash): Connection error.
+Trouble shooting: https://midscenejs.com/model-provider.html
+    at callAI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\service-caller\index.ts:597:22)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at plan (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\ai-model\llm-planning.ts:238:7)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:368:28)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:37:40] [INFO] 
+--- 第 18 次检查 (剩余 16分14秒) ---
+[2026-04-23 21:37:40] [INFO] 执行抢礼物操作...
+[2026-04-23 21:38:05] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:38:07] [INFO] 
+--- 第 19 次检查 (剩余 15分47秒) ---
+[2026-04-23 21:38:07] [INFO] 执行抢礼物操作...
+[2026-04-23 21:38:56] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj1d4f.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj1d4f.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\76b487b0-ca2e-463d-85ff-fbea91aaf31d.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj1j5q.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj1j5q.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\9ef85df2-7546-431c-99fd-ecfb1972193b.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj1l1j.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj1l1j.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\3423ff7a-3306-417c-8ca8-d8895535bf21.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj1rl6.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj1rl6.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\4bb54c06-43f3-45dc-92be-3f933f8a2b0a.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj1sy7.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj1sy7.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\81160019-fdd6-428a-bd7f-01481b805711.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj1z8a.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj1z8a.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\0eb95d74-944f-4736-acf1-170580687757.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj20kc.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj20kc.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\e4364a66-6dc3-4ca7-8318-657c88c99722.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj26ma.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj26ma.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\3aec0315-7cf7-48a2-baf4-e1169299a69d.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj28ij.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj28ij.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\af7a1a8c-e1d7-40dd-af37-03d59aba9359.png'
+Error executing act: Task failed: No gifts found
+
+Error: Task failed: No gifts found
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: No gifts found
+
+Error: Task failed: No gifts found
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:38:58] [INFO] 
+--- 第 20 次检查 (剩余 14分55秒) ---
+[2026-04-23 21:38:58] [INFO] 执行抢礼物操作...
+[2026-04-23 21:41:58] [ERROR] ❌ 抢礼物失败: 命令超时
+[2026-04-23 21:42:00] [INFO] 
+--- 第 21 次检查 (剩余 11分54秒) ---
+[2026-04-23 21:42:00] [INFO] 执行抢礼物操作...
+[2026-04-23 21:42:17] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:42:19] [INFO] 
+--- 第 22 次检查 (剩余 11分35秒) ---
+[2026-04-23 21:42:19] [INFO] 执行抢礼物操作...
+[2026-04-23 21:44:05] [ERROR] ❌ 抢礼物失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj6zx4.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj6zx4.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\f229895d-7bae-4321-961e-c6374f8294f8.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj75xn.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj75xn.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\5deab1c2-c1e2-4230-9829-7dc2d7599076.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj7bbz.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj7bbz.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\b84ef65c-2ac1-4bfe-9c3a-27e1d027d9b1.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe 600 1330 600 0 1000''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj7dhp.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj7dhp.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\27885d32-3e84-4783-a22c-e82c139767cb.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj7ie7.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj7ie7.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\c023f778-4bfd-4906-a2fd-b7dd2e23cef5.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input keyevent 4''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj7jmv.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj7jmv.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\55d8a232-d9ab-4528-9b1a-b0d134e6c5ae.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj7rzv.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj7rzv.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\27c8546b-3c90-4779-9db3-6b881b38b5bb.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj7tun.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj7tun.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\f0a73a93-9386-416a-bb11-370f2e9554a3.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj83lb.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj83lb.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\e104f56b-2dd9-47d4-929e-31e11c89a568.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj85ga.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj85ga.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\81ad4253-021a-4eb0-9266-29a12dcbc7d8.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj8e3e.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj8e3e.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\ec819052-5065-40a3-8986-524c44befae9.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj8fz3.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj8fz3.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\9bbdcf24-d0b4-4ac5-b4e0-c01cee559f04.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj8onh.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj8onh.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\eed43248-d025-4093-b17a-c8e61d2f769e.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe NaN NaN NaN NaN 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj8qi1.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj8qi1.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\918833ed-9887-4877-8b9f-52df0a25dde1.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobj8s6l.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobj8s6l.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\64db5207-a504-400c-bc0f-f7e2821239b7.png'
+Error executing act: Task failed: 没找到
+
+Error: Task failed: 没找到
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: 没找到
+
+Error: Task failed: 没找到
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:44:07] [INFO] 
+--- 第 23 次检查 (剩余 9分47秒) ---
+[2026-04-23 21:44:07] [INFO] 执行抢礼物操作...
+[2026-04-23 21:46:15] [ERROR] ❌ 抢礼物失败: 命令超时
+[2026-04-23 21:46:16] [INFO] 检查 ADB 工具...
+[2026-04-23 21:46:16] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:46:16] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:46:19] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:46:19] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:46:19] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:46:19] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:46:19] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:46:19] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:46:19] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:46:24] [INFO] ✅ 设备连接成功
+[2026-04-23 21:46:24] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:46:24] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 21:47:20] [INFO] ✅ 他趣 App 启动成功（launch 命令）
+[2026-04-23 21:47:20] [INFO] ⏳ 等待 5 秒让应用完全加载...
+[2026-04-23 21:47:25] [INFO] 📸 拍摄启动后截图验证...
+[2026-04-23 21:47:30] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776952050377.png
+[2026-04-23 21:47:30] [INFO] ✅ 截图成功: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776952050377.png
+[2026-04-23 21:47:30] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 21:47:35] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776952055311.png
+[2026-04-23 21:47:35] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 21:47:35] [INFO] 检查间隔: 3 秒
+[2026-04-23 21:47:35] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 21:47:35] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 21:47:35] [INFO] 执行抢礼物操作...
+[2026-04-23 21:48:48] [INFO] 检查 ADB 工具...
+[2026-04-23 21:48:48] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:48:48] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:48:51] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:48:51] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:48:51] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:48:51] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:48:51] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:48:51] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:48:51] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:48:56] [INFO] ✅ 设备连接成功
+[2026-04-23 21:48:56] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:48:56] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 21:48:56] [INFO] 📍 按 Home 键回到桌面...
+[2026-04-23 21:50:13] [WARNING] ⚠️ 返回桌面失败，继续尝试启动
+[2026-04-23 21:50:14] [INFO] 检查 ADB 工具...
+[2026-04-23 21:50:14] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:50:14] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:50:17] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:50:17] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:50:17] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:50:17] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:50:17] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:50:17] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:50:17] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:50:23] [INFO] ✅ 设备连接成功
+[2026-04-23 21:50:23] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:50:23] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 21:50:23] [INFO] 📍 按 Home 键回到桌面...
+[2026-04-23 21:50:23] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:50:23] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:50:23] [INFO] ✅ 已回到桌面
+[2026-04-23 21:50:25] [INFO] 🚀 使用 ADB 直接启动他趣...
+[2026-04-23 21:50:25] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:50:25] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:50:25] [WARNING] ⚠️ ADB 启动命令失败: args: [-p, com.taqu, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.taqu"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.taqu"
+data="android.intent.category.LAUNCHER"
+
+[2026-04-23 21:50:25] [INFO] 尝试备用方案：让 AI 点击图标...
+[2026-04-23 21:51:02] [INFO] 检查 ADB 工具...
+[2026-04-23 21:51:02] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:51:02] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:51:05] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:51:05] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:51:05] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:51:05] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:51:05] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:51:05] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:51:05] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:51:10] [INFO] ✅ 设备连接成功
+[2026-04-23 21:51:10] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:51:10] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 21:51:10] [INFO] 📍 按 Home 键回到桌面...
+[2026-04-23 21:51:10] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:51:10] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:51:10] [INFO] ✅ 已回到桌面
+[2026-04-23 21:51:12] [INFO] 🚀 使用 ADB 直接启动他趣...
+[2026-04-23 21:51:12] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:51:12] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:51:12] [WARNING] ⚠️ am start 失败: Error type 3
+Error: Activity class {com.taqu/com.taqu.MainActivity} does not exist.
+
+[2026-04-23 21:51:12] [INFO] 尝试 monkey 命令...
+[2026-04-23 21:51:12] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:51:12] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:51:12] [WARNING] ⚠️ monkey 也失败: args: [-p, com.taqu, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.taqu"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.taqu"
+data="android.intent.category.LAUNCHER"
+
+[2026-04-23 21:51:12] [INFO] 尝试备用方案：让 AI 点击图标...
+[2026-04-23 21:52:19] [INFO] 检查 ADB 工具...
+[2026-04-23 21:52:19] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:52:19] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:52:22] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:52:22] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:52:22] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:52:22] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:52:22] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:52:22] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:52:22] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:52:27] [INFO] ✅ 设备连接成功
+[2026-04-23 21:52:27] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:52:27] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 21:52:27] [INFO] 📍 按 Home 键回到桌面...
+[2026-04-23 21:52:27] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:52:27] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:52:28] [INFO] ✅ 已回到桌面
+[2026-04-23 21:52:30] [INFO] 🚀 使用 ADB 直接启动他趣...
+[2026-04-23 21:52:30] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:52:30] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:52:30] [WARNING] ⚠️ monkey 失败: args: [-p, com.taqu, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.taqu"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.taqu"
+data="android.intent.category.LAUNCHER"
+
+[2026-04-23 21:52:30] [INFO] 尝试备用方案：让 AI 点击图标...
+[2026-04-23 21:53:19] [ERROR] ❌ 启动失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 'adb.exe' from 'F:\taquclaw\adb_tools\platform-tools\adb.exe'
+dbug ADB Running 'F:\taquclaw\adb_tools\platform-tools\adb.exe -P 5037 start-server'
+dbug ADB Getting connected devices
+dbug ADB Connected devices: [{"udid":"ANGYVB3C04003929","state":"device"}]
+dbug ADB Setting device id to ANGYVB3C04003929
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm size'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys input | grep SurfaceOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'dumpsys display | grep mCurrentOrientation''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell wm density'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobjjvdn.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobjjvdn.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\c18f7011-ef93-4d0a-adc6-98e232da5233.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobjk40e.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobjk40e.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\b4cfbd36-9575-4994-848f-a834640c36b7.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe 0 0 0 0 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobjk64u.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobjk64u.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\9f1a3b1c-d6ab-489f-abc1-cc60382a50ed.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobjke7f.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobjke7f.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\e9abe119-2b5f-4e50-8b42-92559ed4b993.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe 0 0 0 0 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobjkg6j.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobjkg6j.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\9a996cf3-b423-491b-a492-d45360a79001.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobjkoh3.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobjkoh3.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\531dccdb-c3d8-4250-9842-c91d4d8f77d3.png'
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'input swipe 0 0 0 0 150''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 shell 'screencap -p  /data/local/tmp/ms_mobjkq4r.png''
+dbug ADB Running 'adb -P 5037 -s ANGYVB3C04003929 pull /data/local/tmp/ms_mobjkq4r.png C:\Users\Lenovo\AppData\Local\Temp\midscene-unknown-package-name\c14d0e6a-7b25-466c-860c-607f9b1058e1.png'
+Error executing act: Task failed: App not found
+
+Error: Task failed: App not found
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Failed to execute act: Task failed: App not found
+
+Error: Task failed: App not found
+
+    at assert (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\utils.js:77:27)
+    at Object.executor (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:434:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at TaskRunner.flush (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\task-runner.ts:282:25)
+    at TaskExecutor.runAction (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\tasks.ts:329:22)
+    at runAiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:926:40)
+    at AndroidAgent.aiAct (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\core\src\agent\agent.ts:969:12)
+    at Object.handler (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\mcp\tool-generator.js:395:36)
+    at runToolsCLI (C:\Users\Lenovo\.workbuddy\binaries\node\node-v18.19.0-win-x64\node_modules\@midscene\android\node_modules\@midscene\shared\dist\lib\cli\cli-runner.js:159:20)
+Command failed
+
+[2026-04-23 21:53:19] [INFO] 断开设备连接...
+[2026-04-23 21:53:22] [INFO] ✅ 设备已断开
+[2026-04-23 21:53:30] [INFO] 检查 ADB 工具...
+[2026-04-23 21:53:30] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:53:30] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:53:35] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:53:35] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:53:35] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:53:35] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:53:35] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:53:35] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:53:35] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:53:40] [INFO] ✅ 设备连接成功
+[2026-04-23 21:53:40] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:53:40] [INFO] 启动他趣 App: com.taqu
+[2026-04-23 21:54:53] [INFO] ✅ 他趣 App 启动成功（AI 自动操作）
+[2026-04-23 21:54:53] [INFO] ⏳ 等待 8 秒让应用完全加载...
+[2026-04-23 21:55:01] [INFO] 📸 拍摄启动后截图验证...
+[2026-04-23 21:55:06] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776952506332.png
+[2026-04-23 21:55:06] [INFO] ✅ 截图成功: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776952506332.png
+[2026-04-23 21:55:06] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 21:55:14] [INFO] 检查 ADB 工具...
+[2026-04-23 21:55:14] [INFO] ✅ ADB 工具正常
+[2026-04-23 21:55:14] [INFO] 检查 Midscene 工具...
+[2026-04-23 21:55:17] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 21:55:17] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 21:55:17] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 21:55:17] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 21:55:17] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 21:55:17] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 21:55:17] [INFO] 连接设备: ANGYVB3C04003929
+[2026-04-23 21:56:19] [INFO] ✅ 设备连接成功
+[2026-04-23 21:56:19] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 21:56:19] [INFO] ⚠️ 自动启动暂不可用，请手动操作：
+[2026-04-23 21:56:19] [INFO]    1. 在手机上解锁屏幕
+[2026-04-23 21:56:19] [INFO]    2. 打开他趣 App
+[2026-04-23 21:56:19] [INFO]    3. 进入一个群聊界面（确保聊天界面可见）
+[2026-04-23 21:56:19] [INFO]    然后按回车键继续...
+[2026-04-23 21:58:44] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 21:58:50] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776952729937.png
+[2026-04-23 21:58:50] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 21:58:50] [INFO] 检查间隔: 3 秒
+[2026-04-23 21:58:50] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 21:58:50] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 21:58:50] [INFO] 执行抢礼物操作...
+[2026-04-23 21:59:16] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 21:59:19] [INFO] 
+--- 第 2 次检查 (剩余 29分30秒) ---
+[2026-04-23 21:59:19] [INFO] 执行抢礼物操作...
+[2026-04-23 22:00:19] [INFO] ✅ 抢礼物操作成功
+[2026-04-23 22:00:19] [INFO] 🎉 累计抢到 1 个礼物！
+[2026-04-23 22:00:22] [INFO] 
+--- 第 3 次检查 (剩余 28分27秒) ---
+[2026-04-23 22:00:22] [INFO] 执行抢礼物操作...
+[2026-04-23 22:00:38] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 22:00:41] [INFO] 
+--- 第 4 次检查 (剩余 28分8秒) ---
+[2026-04-23 22:00:41] [INFO] 执行抢礼物操作...
+[2026-04-23 22:01:34] [INFO] ✅ 抢礼物操作成功
+[2026-04-23 22:01:34] [INFO] 🎉 累计抢到 2 个礼物！
+[2026-04-23 22:01:37] [INFO] 
+--- 第 5 次检查 (剩余 27分12秒) ---
+[2026-04-23 22:01:37] [INFO] 执行抢礼物操作...
+[2026-04-23 22:02:18] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 22:02:21] [INFO] 
+--- 第 6 次检查 (剩余 26分28秒) ---
+[2026-04-23 22:02:21] [INFO] 执行抢礼物操作...
+[2026-04-23 22:03:06] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 22:03:09] [INFO] 
+--- 第 7 次检查 (剩余 25分40秒) ---
+[2026-04-23 22:03:09] [INFO] 执行抢礼物操作...
+[2026-04-23 22:03:22] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 22:03:25] [INFO] 
+--- 第 8 次检查 (剩余 25分24秒) ---
+[2026-04-23 22:03:25] [INFO] 执行抢礼物操作...
+[2026-04-23 22:03:49] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 22:03:52] [INFO] 
+--- 第 9 次检查 (剩余 24分57秒) ---
+[2026-04-23 22:03:52] [INFO] 执行抢礼物操作...
+[2026-04-23 22:04:38] [WARNING] ⚠️ 抢礼物操作完成，但未明确识别到礼物
+[2026-04-23 22:04:41] [INFO] 
+--- 第 10 次检查 (剩余 24分8秒) ---
+[2026-04-23 22:04:41] [INFO] 执行抢礼物操作...
+[2026-04-23 22:06:30] [INFO] 检查 ADB 工具...
+[2026-04-23 22:06:30] [INFO] ✅ ADB 工具正常
+[2026-04-23 22:06:30] [INFO] 检查 Midscene 工具...
+[2026-04-23 22:06:33] [INFO] ✅ Midscene 版本: midscene-android v1.7.5
+[2026-04-23 22:06:33] [INFO] 
+【步骤 2】设备检查
+[2026-04-23 22:06:33] [INFO] 检查 Android 设备连接状态...
+[2026-04-23 22:06:33] [INFO] ✅ 发现 1 台设备: ['ANGYVB3C04003929']
+[2026-04-23 22:06:33] [INFO] 使用设备: ANGYVB3C04003929
+[2026-04-23 22:06:33] [INFO] 
+【步骤 3】连接设备
+[2026-04-23 22:06:33] [INFO] ⏭️ 跳过手动连接（act 命令将自动连接设备）
+[2026-04-23 22:06:33] [INFO] 
+【步骤 4】启动他趣
+[2026-04-23 22:06:33] [INFO] ⚠️ 自动启动暂不可用，请手动操作：
+[2026-04-23 22:06:33] [INFO]    1. 在手机上解锁屏幕
+[2026-04-23 22:06:33] [INFO]    2. 打开他趣 App
+[2026-04-23 22:06:33] [INFO]    3. 进入一个群聊界面（确保聊天界面可见）
+[2026-04-23 22:06:33] [INFO]    然后按回车键继续...
+[2026-04-23 22:06:41] [INFO] 
+【步骤 5】截图确认界面
+[2026-04-23 22:06:46] [INFO] 📸 截图保存: Screenshot saved: C:\Users\Lenovo\AppData\Local\Temp\screenshot-1776953205995.png
+[2026-04-23 22:06:46] [INFO] 
+【步骤 6】开始监控抢礼物（持续 30 分钟）
+[2026-04-23 22:06:46] [INFO] 检查间隔: 3 秒
+[2026-04-23 22:06:46] [INFO] 按 Ctrl+C 可提前结束
+[2026-04-23 22:06:46] [INFO] 
+--- 第 1 次检查 (剩余 29分59秒) ---
+[2026-04-23 22:06:46] [INFO] 执行抢礼物操作...
+[2026-04-23 22:07:02] [INFO] 📋 AI 描述: Midscene - report will be generated at: C:\Users\Lenovo\.workbuddy\skills\android-device-automation\midscene_run\report\android-2026-04-23_22-06-49-9015989f.html
+Midscene - report generated: C:\Users\
+[2026-04-23 22:07:02] [INFO] ✅ 未发现礼物，跳过本次检查
+[2026-04-23 22:07:05] [INFO] 
+--- 第 2 次检查 (剩余 29分40秒) ---
+[2026-04-23 22:07:05] [INFO] 执行抢礼物操作...
+[2026-04-23 22:07:26] [INFO] 📋 AI 描述: Midscene - report will be generated at: C:\Users\Lenovo\.workbuddy\skills\android-device-automation\midscene_run\report\android-2026-04-23_22-07-08-614c0e9f.html
+Midscene - report generated: C:\Users\
+[2026-04-23 22:07:26] [INFO] ✅ 未发现礼物，跳过本次检查
+[2026-04-23 22:07:29] [INFO] 
+--- 第 3 次检查 (剩余 29分16秒) ---
+[2026-04-23 22:07:29] [INFO] 执行抢礼物操作...
+[2026-04-23 22:07:41] [INFO] 📋 AI 描述: Midscene - report will be generated at: C:\Users\Lenovo\.workbuddy\skills\android-device-automation\midscene_run\report\android-2026-04-23_22-07-32-08cb75ed.html
+Midscene - report generated: C:\Users\
+[2026-04-23 22:07:41] [INFO] ✅ 未发现礼物，跳过本次检查
+[2026-04-23 22:07:44] [INFO] 
+--- 第 4 次检查 (剩余 29分1秒) ---
+[2026-04-23 22:07:44] [INFO] 执行抢礼物操作...
+[2026-04-23 22:08:11] [INFO] 📋 AI 描述: Midscene - report will be generated at: C:\Users\Lenovo\.workbuddy\skills\android-device-automation\midscene_run\report\android-2026-04-23_22-07-51-4a5fb4aa.html
+Midscene - report generated: C:\Users\
+[2026-04-23 22:08:11] [INFO] ✅ 未发现礼物，跳过本次检查
+[2026-04-23 22:08:14] [INFO] 
+--- 第 5 次检查 (剩余 28分31秒) ---
+[2026-04-23 22:08:14] [INFO] 执行抢礼物操作...
+[2026-04-23 22:08:28] [INFO] 📋 AI 描述: Midscene - report will be generated at: C:\Users\Lenovo\.workbuddy\skills\android-device-automation\midscene_run\report\android-2026-04-23_22-08-17-56dacac5.html
+Midscene - report generated: C:\Users\
+[2026-04-23 22:08:28] [INFO] ✅ 未发现礼物，跳过本次检查
+[2026-04-23 22:08:31] [INFO] 
+--- 第 6 次检查 (剩余 28分14秒) ---
+[2026-04-23 22:08:31] [INFO] 执行抢礼物操作...
+[2026-04-23 22:08:48] [INFO] 📋 AI 描述: Midscene - report will be generated at: C:\Users\Lenovo\.workbuddy\skills\android-device-automation\midscene_run\report\android-2026-04-23_22-08-34-d96a1310.html
+Midscene - report generated: C:\Users\
+[2026-04-23 22:08:48] [INFO] 🎁 检测到礼物，准备点击...
+[2026-04-23 22:09:55] [ERROR] ❌ 点击失败: info ADB Found 0 'build-tools' folders under 'F:\taquclaw\adb_tools' (newest first):
+info ADB Using 
+[2026-04-23 22:09:58] [INFO] 
+--- 第 7 次检查 (剩余 26分47秒) ---
+[2026-04-23 22:09:58] [INFO] 执行抢礼物操作...

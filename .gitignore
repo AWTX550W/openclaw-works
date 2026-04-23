@@ -1,45 +1,9 @@
-# 配置文件（敏感信息）
-config.py
-*.env
 .env
-
-# 数据文件（可能很大）
-data/
-*.json
-*.db
-*.sqlite
-
-# 日志
-logs/
 *.log
-
-# Python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-.Python
-venv/
-env/
-.venv/
-
-# Node.js
-node_modules/
-npm-debug.log*
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Docker
-docker-compose.override.yml
-
-# 临时文件
-tmp/
-temp/
+.env.local
+midscene_run/log/
+midscene_run/report/
+grab_gifts_log.txt
+grab_report_*.txt
